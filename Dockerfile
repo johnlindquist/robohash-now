@@ -1,4 +1,4 @@
 FROM royletron/robohash
 LABEL name "robohash"
-EXPOSE 80
-CMD "python" "robohash/webfront.py" "-port=80"
+EXPOSE 3001/tcp
+CMD "python" "robohash/webfront.py" "-port=3001"
